@@ -1,3 +1,76 @@
+.fa-youtube {
+    color: rgb(0, 0, 0);
+    float: right;
+    margin-bottom: -20px;
+    
+  }
+  
+  .fa-instagram {
+    color: rgb(0, 0, 0);
+    float: right;
+    margin-bottom: -20px;
+  }
+
+.button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .buttoncg {
+    background-color: white;
+    color: black;
+    float: right;
+  }
+  .buttoncg:hover {background-color: #e7e7e7;}
+
+  .buttonwg {
+    background-color: white;
+    color: black;
+    float: right;
+  }
+  .buttonwg:hover {background-color: #e7e7e7;}
+    
+  .buttoncalendar {
+    background-color: white;
+    color: black;
+    float: right;
+  }
+  .buttoncalendar:hover {background-color: #e7e7e7;}
+  
+  .buttoncontact {
+    background-color: white;
+    color: black;
+    float: right;
+  }
+  .buttoncontact:hover {background-color: #e7e7e7;}
+
+
+h3 {
+    font-family: cursive;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: -5px;
+    margin-top: 30px;
+}
+.fa {
+    padding: 5px;
+    font-size: 20px;
+    width: 30px;
+    text-decoration: none;
+    margin: 5px 15px;
+    display: block;
+  }
+  
+    
 .mySlides {
     display: none;
 }
@@ -6,7 +79,10 @@
     width: 100%;
     height: 100%;
     max-height: 100vh;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 100px;
 }
 /* The dots/bullets/indicators */
 .dot {
@@ -68,7 +144,7 @@
 .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: auto;
     width: auto;
     padding: 16px;
     margin-top: -22px;
