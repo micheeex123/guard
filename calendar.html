@@ -1,38 +1,20 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="calendar.css">
-        <script src="calendar.js"></script>
-        <title> Lynbrook CG & WG Calendar </title>
-    </head>
-    <body>
-        <div id="app">
-            <calendar></calendar>
-          </div>
-          <template id="calendar-template">
-            <div class="calendar">
-              <div class="title">
-                <div class="month">
-                  {{monthName}}
-                </div>
-                <div class="year">
-                  {{year}}
-                </div>
-              </div>
-              <ol class="days">
-                <li class="day" v-for="day in days | orderBy 'unix' 1" v-bind:class="{ 'outside': day.outsideOfCurrentMonth, 'empty': day.events.length === 0 }">
-                  <div class="date">
-                    <span class="weekday">{{day.weekday}}</span>
-                    <span class="month">{{day.month}}</span>
-                    <span class="day">{{day.number}}</span>
-                    <span class="year">{{day.year}}</span>
-                  </div>
-                  <div class="events">
-                    <div v-for="event in day.events" class="event" v-bind:class="{'first': event.firstInRange, 'last': event.lastInRange }">{{event.title}} </div>
-                  </div>
-                </li>
-              </ol>
-            </div>
-          </template>
-    </body>
+  <head>
+    <style>
+        h1 {
+            font-family: cursive;
+            font-size: 50px;
+            text-align: center;
+            margin-top: 35px;
+        }
+    </style>
+    <title> Lynbrook CG & WG Calendar</title>
+    <h1> ✩ Lynbrook Color Guard and Winter Guard Calendar ✩ </h1>
+    <div align="center">
+        <iframe src="https://calendar.google.com/calendar/embed?height=650&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&showTitle=0&showNav=1&showTabs=1&showPrint=0&showTz=0&showCalendars=0&src=OTNhOTljYThlYTg2YWQyYzAwZDRmN2ZhZGMxMzU1ZTI2ZTRjYzRlNmY0MGU1ZTg3M2ViNTc3NDNjYmY4MjA0ZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=YTg5ODBhNzBhNWRiNjJhYTU1NTFlZDM3OTAyNmYyY2MyYjEyMmE2ODEyMTUzMzI2ZmY0OTMxM2FiZjUzYTUzNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=MWE0NTFkMWM3NGQxMDkwOWJmMjM4NmVjMzFkN2M0MzZiNDU4NzA5MzNhZDk5ZDVlNmFjNjZhNzBjMmVhMTM4M0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=YWFkYjRiNzQ0ODFiZWIyNmE4Y2NjMjQ5ZDhmNDljMzliM2YzMjI0ZGUyMmZlYjViNTE4ZDQzNTJiNGIzNDUxY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=MzQ2OGVhNDkzOTJhMTc2OTgyMDI1NTU2NmNiNjZkMTA5ZjQ5MTk0ZmM2MDZmOGVmNjI2YTYyMTQ2NjhmZDUxNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=YzM0MTJkMTA3M2U4YWU3MDc2NWMzZGJiM2RjYjdlZTE2MGYzODQwYWY4ODg4NWM3NmZkNTJlZWQxZDM4OWFiNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23B39DDB&color=%237dcc7a&color=%23aacc77&color=%23cc8fb2&color=%23a1c5cc&color=%23ccaf89" style="border:solid 1px #777" width="1350" height="650" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </head>
+
+  <body>
+  </body>
 </html>
