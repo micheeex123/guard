@@ -1,1 +1,38 @@
-<h1> WORK IN PROGRESS COME BACK LATER </h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="calendar.css">
+        <script src="calendar.js"></script>
+        <title> Lynbrook CG & WG Calendar </title>
+    </head>
+    <body>
+        <div id="app">
+            <calendar></calendar>
+          </div>
+          <template id="calendar-template">
+            <div class="calendar">
+              <div class="title">
+                <div class="month">
+                  {{monthName}}
+                </div>
+                <div class="year">
+                  {{year}}
+                </div>
+              </div>
+              <ol class="days">
+                <li class="day" v-for="day in days | orderBy 'unix' 1" v-bind:class="{ 'outside': day.outsideOfCurrentMonth, 'empty': day.events.length === 0 }">
+                  <div class="date">
+                    <span class="weekday">{{day.weekday}}</span>
+                    <span class="month">{{day.month}}</span>
+                    <span class="day">{{day.number}}</span>
+                    <span class="year">{{day.year}}</span>
+                  </div>
+                  <div class="events">
+                    <div v-for="event in day.events" class="event" v-bind:class="{'first': event.firstInRange, 'last': event.lastInRange }">{{event.title}} </div>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </template>
+    </body>
+</html>
