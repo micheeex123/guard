@@ -4,6 +4,12 @@
     margin-bottom: -20px;
     
   }
+
+  .fa-camera {
+    color: rgb(0, 0, 0);
+    float: right;
+    margin-bottom: -20px;
+  }
   
   .fa-instagram {
     color: rgb(0, 0, 0);
@@ -74,6 +80,9 @@ h3 {
     
 .mySlides {
     display: none;
+    margin-top: -45px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 /* Slideshow container */
 .slideshow-container {
@@ -104,10 +113,10 @@ h3 {
 
 /* Fading animation */
 .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 3s;
-    animation-name: fade;
-    animation-duration: 3s;
+    -webkit-animation-name: slide;
+    -webkit-animation-duration: 2s;
+    animation-name: slide;
+    animation-duration: 2s;
 }
 
 @-webkit-keyframes fade {
@@ -146,7 +155,8 @@ h3 {
     cursor: pointer;
     position: absolute;
     top: auto;
-    width: auto;
+    margin-left: 3.5%;
+    margin-right: 4%; 
     padding: 16px;
     margin-top: -22px;
     color: white;

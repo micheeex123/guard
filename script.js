@@ -1,4 +1,4 @@
-var timeOut = 2000;
+var timeOut = 5000;
 var slideIndex = 0;
 var autoOn = true;
 
@@ -15,7 +15,7 @@ function autoSlides() {
 
 function prevSlide() {
 
-    timeOut = 2000;
+    timeOut = 5000;
 
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
@@ -38,7 +38,7 @@ function prevSlide() {
 
 function showSlides() {
 
-    timeOut = 2000;
+    timeOut = 5000;
 
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
