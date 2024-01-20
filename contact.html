@@ -1,1 +1,86 @@
-<h1> WORK IN PROGRESS COME BACK LATER </h1>
+<!DOCTYPE html>
+<html>
+<style>
+
+    h1 {
+        font-family: cursive;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .h2 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+form {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  padding: 20px;
+  width: 50%;
+  background-color: #E0EEFF;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type=text], input[type=submit] {
+  width: 50%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type=submit] {
+  background-color: #000000;
+  color: white;
+  border: none;
+  margin-left: auto;
+margin-right: auto;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+</style>
+<body>
+
+    <h1> Contact Us & Subscribe </h1>
+
+<form action="welcome_get.php" method = "GET">
+  <div class="container">
+    <h2> Subscribe to our Newsletter!</h2>
+    <p>Say updated with all the events and information for Color Guard and Winter Guard! Subscribe to our newsletter for frequent updates :)</p>
+  </div>
+
+  <div class="container" style="background-color:white">
+    <input type="text" placeholder="Email Address" name="email" required>
+    <input type ="text" placeholder = "Color Guard or Winter Guard?" name = "sport" required>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Subscribe!">
+  </div>
+</form>
+
+</body>
+</html>
